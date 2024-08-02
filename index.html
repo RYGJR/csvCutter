@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./index.js"></script>
+    <title>CSV File Processor</title>
+    <link rel="icon" type="image/x-icon" href="images/scissors.png">
+    
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .input-container {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h1>CSV File Processor</h1>
+
+    <div class="input-container">
+      <label for="fileInput">Select CSV file:</label>
+      <input type="file" id="fileInput" accept=".csv" />
+    </div>
+
+    <div class="input-container">
+      <label for="rowsPerFileInput">Rows per CSV file:</label>
+      <input type="number" id="rowsPerFileInput" value="100" />
+    </div>
+
+    <div class="input-container">
+      <label for="filenamePrefix">Filename prefix:</label>
+      <input type="text" id="filenamePrefix" value="SAP Order for Upload as of  " />
+    </div>
+
+    <div class="input-container">
+      <label for="month">Month:</label>
+      <input type="text" id="month" placeholder="Month" />
+    </div>
+
+    <div class="input-container">
+      <label for="day">Day:</label>
+      <input type="text" id="day" placeholder="Day" />
+    </div>
+
+    <div class="input-container">
+      <label for="year">Year:</label>
+      <input type="text" id="year" placeholder="(2024)" />
+    </div>
+
+    <div class="input-container">
+      <label for="suffixNumber">Starting suffix number:</label>
+      <input type="number" id="suffixNumber" value="1" />
+    </div>
+
+    <button onclick="processCSV()">Process CSV</button>
+
+    
+  </body>
+</html>
