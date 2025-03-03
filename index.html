@@ -48,7 +48,7 @@
 
     <div class="input-container">
       <label for="year">Year:</label>
-      <input type="text" id="year" placeholder="(2024)" />
+      <input type="text" id="year" placeholder=currentYear />
     </div>
 
     <div class="input-container">
@@ -60,4 +60,11 @@
 
     
   </body>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+ var currentYear = new Date().getFullYear();
+ document.getElementById('currentYear').textContent = currentYear;
+});
+</script>
+  
 </html>
